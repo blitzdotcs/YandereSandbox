@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{9BD5904F-896B-B5BC-475F-E0F33343E66E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_19;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\ActiveAnimation.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\AIFollow.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\AIPath.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\AnimatedAlpha.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\AnimatedColor.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\AnimatedWidget.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\AnimationOrTween\Direction.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\AnimationOrTween\DisableCondition.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\AnimationOrTween\EnableCondition.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\AnimationOrTween\Trigger.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\AstarDebugger.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\AstarPath.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\AstarSmoothFollow2.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\BetterList.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\BezierMover.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\BlurEffect.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\BMFont.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\BMGlyph.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\BMSymbol.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\ByteReader.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\ColorCorrectionEffect.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\ConnectionType.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\ContrastStretchEffect.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\DoorController.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\DragRigidbody.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\DynamicGridObstacle.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\EventDelegate.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\GetNextTargetDelegate.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\GlowEffect.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\GraphDebugMode.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\GraphUpdateThreading.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\GrayscaleEffect.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\GroupController.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Heuristic.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\HighlightingSystem\Highlighter.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\HighlightingSystem\HighlightingBase.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\HighlightingSystem\HighlightingBlitter.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\HighlightingSystem\HighlightingMobile.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\HighlightingSystem\HighlightingRenderer.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\HighlightingSystem\ShaderPropertyID.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\ImageEffectBase.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\ImageEffects.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\About.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\DataReaderProvider.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\DataWriterProvider.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\EcmaScriptIdentifier.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\EcmaScriptWriter.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\IDataReader.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\IDataReaderProvider.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\IDataWriter.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\IDataWriterProvider.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\IJsonSerializable.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\JsonDataReader.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\JsonDataWriter.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\JsonDeserializationException.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\JsonIgnoreAttribute.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\JsonNameAttribute.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\JsonReader.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\JsonReaderSettings.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\JsonSerializationException.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\JsonSpecifiedPropertyAttribute.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\JsonToken.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\JsonTypeCoercionException.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\JsonWriter.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\JsonWriterSettings.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\TypeCoercionUtility.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Json\WriteDelegate.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Xml\XmlDataReader.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\JsonFx\Xml\XmlDataWriter.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\LanguageSelection.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\LightweightRVO.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Localization.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\LocalSpaceGraph.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\LocalSpaceRichAI.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\MotionBlur.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\MouseLook.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\NavmeshController.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\NavMeshRenderer.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\NGUIDebug.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\NGUIMath.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\NGUIText.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\NGUITools.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\NodeDelegate.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\NoiseEffect.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\ObjectPlacer.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\OnGraphDelegate.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\OnPathDelegate.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\OnScanDelegate.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\OnScanStatus.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\OnVoidDelegate.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\PathCompleteState.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\ABPath.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\ABPathEndingCondition.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\AdvancedSmooth.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\AlternativePath.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\AnimationLink.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\AstarColor.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\AstarData.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\AstarEnumFlagAttribute.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\AstarMath.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\AstarProfiler.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\AstarSplines.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\BBTree.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\BinaryHeapM.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\ColliderType.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\ConstantPath.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\ConvexMeshNode.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\DebugUtility.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\EndingConditionDistance.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\FleePath.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\FloodPath.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\FloodPathConstraint.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\FloodPathTracer.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\FunnelModifier.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\GraphCollision.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\GraphEditorBase.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\GraphHitInfo.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\GraphModifier.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\GraphNode.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\GraphNodeDelegate.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\GraphNodeDelegateCancelable.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\GraphUpdateObject.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\GraphUpdateScene.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\GraphUpdateShape.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\GraphUpdateUtilities.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\GridGraph.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\GridNode.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\IFunnelGraph.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\INavmesh.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\INavmeshHolder.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Int2.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Int3.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\IntRect.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\IPathModifier.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\IRaycastableGraph.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\IUpdatableGraph.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\LayerGridGraph.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\LayerGridGraphUpdate.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\LevelGridNode.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\LinkedLevelCell.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\LinkedLevelNode.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\LocalAvoidance.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\LocalAvoidanceMover.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\MeshNode.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\MineBotAI.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\ModifierConverter.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\ModifierData.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\MonoModifier.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\MultiTargetPath.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\NavGraph.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\NavmeshAdd.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\NavmeshClamp.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\NavmeshCut.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\NavMeshGraph.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\NNConstraint.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\NNInfo.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Node.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\NodeLink.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\NodeLink2.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\NodeLink3.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\NodeLink3Node.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\NumNeighbours.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\ObjImporter.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Path.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\PathEndingCondition.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\PathHandler.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\PathModifier.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\PathNNConstraint.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\PathNode.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\PathPool.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\PathThreadInfo.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\PathUtilities.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\PointGraph.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\PointNode.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Polygon.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Profile.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Progress.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\QuadtreeGraph.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\QuadtreeNode.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\QuadtreeNodeHolder.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RandomPath.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RaycastModifier.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RayDirection.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RecastBBTree.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RecastBBTreeBox.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RecastGraph.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RecastMeshObj.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RelevantGraphSurface.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RichAI.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RichFunnel.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RichPath.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RichPathPart.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RichSpecial.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RVO\IAgent.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RVO\Line.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RVO\ObstacleVertex.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RVO\RVOController.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RVO\RVOLayer.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RVO\RVONavmesh.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RVO\RVOObstacle.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RVO\RVOQuadtree.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RVO\RVOSimulator.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RVO\RVOSquareObstacle.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RVO\Sampled\Agent.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\RVO\Simulator.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Serialization\AstarSerializer.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Serialization\BoundsConverter.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Serialization\GraphMeta.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Serialization\GraphSerializationContext.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Serialization\GuidConverter.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Serialization\IntKeyDictionaryConverter.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Serialization\LayerMaskConverter.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Serialization\MatrixConverter.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Serialization\SerializeSettings.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Serialization\UnityObjectConverter.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Serialization\VectorConverter.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\SimpleSmoothModifier.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\StartEndModifier.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\TagMask.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\TargetMover.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\ThreadControlQueue.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\TileHandlerHelper.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\TriangleMeshNode.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\UnityReferenceHelper.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\UserConnection.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Util\Checksum.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Util\Guid.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Util\IAstarPooledObject.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Util\ListPool.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Util\LockFreeStack.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Util\Memory.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Util\ObjectPool.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Util\StackPool.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Util\TileHandler.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Voxels\CompactVoxelCell.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Voxels\CompactVoxelSpan.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Voxels\ExtraMesh.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Voxels\LinkedVoxelSpan.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Voxels\Utility.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Voxels\VoxelArea.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Voxels\VoxelCell.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Voxels\VoxelContour.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Voxels\VoxelContourSet.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Voxels\Voxelize.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Voxels\VoxelMesh.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\Voxels\VoxelSpan.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Pathfinding\WindowsStore\WindowsStoreCompatibility.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\PathLog.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\PathState.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\PathTypesDemo.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\ProceduralGridMover.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\ProceduralWorld.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\PropertyBinding.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\PropertyReference.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\RadiusModifier.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\RealTime.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\RPG_Animation.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\RPG_Animation_CharacterFadeOnly.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\RPG_Camera.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\RPG_Controller.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\RVOAgentPlacer.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\RVOExampleAgent.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\Seeker.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\SepiaToneEffect.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\SpringPanel.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\SpringPosition.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\SSAOEffect.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\SWP_HeartRateMonitor.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\TFUtils.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\ThreadCount.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\TweenAlpha.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\TweenColor.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\TweenFOV.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\TweenHeight.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\TweenOrthoSize.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\TweenPosition.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\TweenRotation.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\TweenScale.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\TweenTransform.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\TweenVolume.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\TweenWidth.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\TwirlEffect.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\TypewriterEffect.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UI2DSprite.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UI2DSpriteAnimation.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIAnchor.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIAtlas.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIBasicSprite.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIButton.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIButtonActivate.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIButtonColor.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIButtonKeys.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIButtonMessage.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIButtonOffset.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIButtonRotation.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIButtonScale.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UICamera.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UICenterOnChild.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UICenterOnClick.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIDragCamera.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIDragDropContainer.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIDragDropItem.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIDragDropRoot.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIDraggableCamera.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIDragObject.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIDragResize.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIDragScrollView.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIDrawCall.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIEventListener.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIEventTrigger.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIFont.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIForwardEvents.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIGeometry.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIGrid.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIImageButton.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIInput.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIInputOnGUI.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIKeyBinding.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIKeyNavigation.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UILabel.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UILocalize.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIOrthoCamera.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIPanel.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIPlayAnimation.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIPlaySound.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIPlayTween.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIPopupList.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIProgressBar.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIRect.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIRoot.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UISavedOption.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIScrollBar.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIScrollView.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UISlider.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UISnapshotPoint.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UISoundVolume.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UISprite.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UISpriteAnimation.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UISpriteData.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIStretch.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UITable.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UITextList.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UITexture.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIToggle.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIToggledComponents.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIToggledObjects.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UITooltip.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UITweener.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIViewport.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIWidget.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIWidgetContainer.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\UIWrapContent.cs" />
+     <Compile Include="Assets\Plugins\Assembly-CSharp-firstpass\VortexEffect.cs" />
+ <Reference Include="UnityEditor.StandardEvents">
+ <HintPath>C:/Users/james/Downloads/Code Stuff/Unity Decomps/YandereSandbox/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro.Editor">
+ <HintPath>C:/Users/james/Downloads/Code Stuff/Unity Decomps/YandereSandbox/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>C:/Users/james/Downloads/Code Stuff/Unity Decomps/YandereSandbox/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>C:/Users/james/Downloads/Code Stuff/Unity Decomps/YandereSandbox/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.BaselibModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CloudWebServicesModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterInputModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterRendererModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.FacebookModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.FileSystemHttpModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.LocalizationModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticlesLegacyModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ProfilerModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StreamingModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StyleSheetsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TimelineModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UmbraModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityAnalyticsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VRModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XRModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Locator">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.ClipperLib">
+ <HintPath>C:/Users/james/Downloads/Code Stuff/Unity Decomps/YandereSandbox/Assets/Plugins/Pathfinding.ClipperLib.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+ <HintPath>C:/Users/james/Downloads/Code Stuff/Unity Decomps/YandereSandbox/Assets/Plugins/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.JsonFx">
+ <HintPath>C:/Users/james/Downloads/Code Stuff/Unity Decomps/YandereSandbox/Assets/Plugins/Pathfinding.JsonFx.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.Poly2Tri">
+ <HintPath>C:/Users/james/Downloads/Code Stuff/Unity Decomps/YandereSandbox/Assets/Plugins/Pathfinding.Poly2Tri.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Users/james/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StandardEvents">
+ <HintPath>C:/Users/james/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript.Lang">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+ </Reference>
+ <Reference Include="Boo.Lang">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
